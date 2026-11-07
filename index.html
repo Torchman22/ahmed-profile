@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
     
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta property="og:title" content="Fawzi | Web & Software Developer">
-<meta property="og:description" content="Websites, software, and digital solutions.">
+<meta property="og:title" content="أحمد فوزي | مطور مواقع وبرمجيات">
+<meta property="og:description" content="مواقع إلكترونية ومتاجر وتطبيقات وبرمجيات وحلول رقمية لأصحاب الأعمال.">
 <meta property="og:image" content="https://torchman22.github.io/ahmed-profile/images/Fawzi Software Engineer Tech Banner.png">
 <meta property="og:url" content="https://torchman22.github.io/ahmed-profile">
 <meta property="og:type" content="website">
@@ -15,8 +15,8 @@
 if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';
 document.documentElement.setAttribute('data-theme',t)})();
 </script>
-<title>Ahmed Fawzy | Web &amp; Software Designer and Developer</title>
-<meta name="description" content="Ahmed Fawzy: software designer and web developer. Websites, online stores, Android apps and desktop software for business owners.">
+<title>أحمد فوزي | مطور مواقع وبرمجيات</title>
+<meta name="description" content="أحمد فوزي، مطور ومصمم برمجيات ومواقع. مواقع إلكترونية ومتاجر وتطبيقات أندرويد وبرامج سطح المكتب لأصحاب الأعمال.">
 <meta name="color-scheme" content="dark light">
 <style>
 :root{--bg:#0b1322;--bg2:#101c33;--card:#14223d;--line:#24365a;--ink:#eaf1ff;--mute:#9fb1d1;--blue:#2f8fff;--sky:#74c8ff;--amber:#ffb454;--on-blue:#fff;
@@ -149,12 +149,55 @@ figcaption{text-align:center;font-size:13px;color:var(--mute);margin-top:6px}
 .steps li,.svc div,.kg{min-width:0;overflow-wrap:anywhere}
 @media(max-width:480px){.steps{grid-template-columns:1fr}section{padding:56px 0}.lang button{padding:7px 9px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* Arabic-first layout refinements */
+html[dir="rtl"] body{font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif}
+html[dir="rtl"] h2:before{left:auto;right:0}
+html[dir="rtl"] .contact h2:before{right:50%;margin-right:-18px;margin-left:0}
+html[dir="rtl"] .svc small{direction:rtl;text-align:right}
+html[dir="rtl"] .work small{direction:rtl}
+html[dir="rtl"] .sk{direction:rtl}
+html[dir="rtl"] .lang{direction:ltr}
+
+/* Clearer Arabic typography and spacing */
+html[dir="rtl"] body{font-family:Tahoma,"Segoe UI",Arial,sans-serif;font-size:17px;line-height:1.95}
+html[dir="rtl"] .wrap{width:min(100% - 40px,1080px)}
+html[dir="rtl"] nav .wrap{min-height:68px}
+html[dir="rtl"] nav ul{gap:22px}
+html[dir="rtl"] .hero{padding:76px 0 82px}
+html[dir="rtl"] .hero .wrap{grid-template-columns:1.15fr .85fr;gap:54px}
+html[dir="rtl"] .hero h1{max-width:14ch;font-size:clamp(34px,5.2vw,54px);line-height:1.5;letter-spacing:0}
+html[dir="rtl"] .hero .tag{font-size:15px;margin-bottom:14px}
+html[dir="rtl"] .hero p{font-size:18px;line-height:2;max-width:38em}
+html[dir="rtl"] .cta{gap:12px}
+html[dir="rtl"] .btn{padding:12px 25px}
+html[dir="rtl"] section{padding:76px 0}
+html[dir="rtl"] h2{font-size:clamp(27px,3.8vw,36px);line-height:1.55;margin-bottom:12px;padding-top:17px}
+html[dir="rtl"] .lead{font-size:17px;line-height:1.95;max-width:48em;margin-bottom:34px}
+html[dir="rtl"] .svc{gap:20px}
+html[dir="rtl"] .svc div{padding:25px;min-height:190px}
+html[dir="rtl"] .svc h3{font-size:19px;line-height:1.65;margin-bottom:9px}
+html[dir="rtl"] .svc p,html[dir="rtl"] .work p{font-size:15.5px;line-height:1.9}
+html[dir="rtl"] .svc small{font-size:13px;letter-spacing:0;color:var(--sky);margin-bottom:10px}
+html[dir="rtl"] .work h3{font-size:19px;line-height:1.6}
+html[dir="rtl"] .work small{font-size:13px}
+html[dir="rtl"] .steps li{padding:23px;line-height:1.9}
+html[dir="rtl"] .steps b{font-size:17px;margin-bottom:5px}
+html[dir="rtl"] .about{gap:50px}
+html[dir="rtl"] .about p{font-size:16.5px;line-height:2.05;margin-bottom:18px}
+html[dir="rtl"] .stats strong{font-size:32px}
+html[dir="rtl"] .stats span{line-height:1.7}
+html[dir="rtl"] .contact{padding-block:70px}
+html[dir="rtl"] footer{line-height:1.8}
+@media(max-width:820px){html[dir="rtl"] .hero{padding:42px 0 54px}html[dir="rtl"] .hero .wrap{grid-template-columns:1fr;gap:28px}html[dir="rtl"] .hero h1{max-width:19ch;font-size:clamp(32px,8vw,44px)}html[dir="rtl"] .photo{width:220px}html[dir="rtl"] section{padding:58px 0}html[dir="rtl"] .svc div{min-height:0}}
+@media(max-width:480px){html[dir="rtl"] .wrap{width:min(100% - 32px,1080px)}html[dir="rtl"] body{font-size:16px}html[dir="rtl"] .hero h1{font-size:32px}html[dir="rtl"] .hero p{font-size:16px}html[dir="rtl"] .lead{font-size:15.5px}html[dir="rtl"] .svc div{padding:21px}}
+
 </style>
 </head>
 <body>
 <nav><div class="wrap"><b>Ahmed Fawzy</b>
 <ul id="nl"><li><a href="#services" data-i18n="nav1">Services</a></li><li><a href="#skills" data-i18n="nav3">Skills</a></li><li><a href="#work" data-i18n="nav2">My Work</a></li><li><a href="#about" data-i18n="nav4">About</a></li><li class="mc"><a href="#contact" data-i18n="nav_cta">Get started</a></li></ul>
-<div class="nav-end"><div class="lang" role="group" data-i18n-aria="langl"><button type="button" data-l="en" lang="en" aria-pressed="true">EN</button><button type="button" data-l="zh" lang="zh" aria-pressed="false">中文</button><button type="button" data-l="de" lang="de" aria-pressed="false">DE</button></div>
+<div class="nav-end"><div class="lang" role="group" data-i18n-aria="langl"><button type="button" data-l="ar" lang="ar" aria-pressed="true">عربي</button><button type="button" data-l="en" lang="en" aria-pressed="false">EN</button><button type="button" data-l="zh" lang="zh" aria-pressed="false">中文</button><button type="button" data-l="de" lang="de" aria-pressed="false">DE</button></div>
 <button class="ib" id="th" type="button" data-i18n-aria="theme"></button><button class="ib" id="mb" type="button" aria-controls="nl" aria-expanded="false" data-i18n-aria="menu">☰</button>
 <a class="btn nc" href="#contact" data-i18n="nav_cta">Get started</a></div></div></nav>
 
@@ -329,6 +372,121 @@ figcaption{text-align:center;font-size:13px;color:var(--mute);margin-top:6px}
 <script>
 /* Translations. English is the fallback for any missing key. Add a language: new block + button in nav. */
 const I18N={
+"ar": {
+  "title": "أحمد فوزي | مطور ومصمم مواقع وبرمجيات",
+  "desc": "أحمد فوزي، مطور ومصمم برمجيات ومواقع. أقدم مواقع إلكترونية ومتاجر وتطبيقات أندرويد وبرامج سطح المكتب لأصحاب الأعمال.",
+  "nav1": "الخدمات",
+  "nav2": "أعمالي",
+  "nav3": "المهارات",
+  "nav4": "من أنا",
+  "nav_cta": "ابدأ مشروعك",
+  "hero_tag": "أحمد فوزي · مطور مواقع وبرمجيات",
+  "hero_h1": "أصمم وأطور لك موقعا أو متجرا إلكترونيا يخدم مشروعك فعليا",
+  "hero_p": "أنا أحمد فوزي، مطور برمجيات ومواقع. أحول أفكار المشاريع إلى مواقع ومتاجر وتطبيقات عملية، من التخطيط والتصميم إلى البرمجة والإطلاق، مع التركيز على احتياجات نشاطك وعملائك.",
+  "hero_b1": "تواصل معي",
+  "hero_b2": "استعرض نماذج من أعمالي",
+  "photo_alt": "أحمد فوزي، مصمم ومطور مواقع وبرمجيات",
+  "st1n": "+8",
+  "st1l": "سنوات من الخبرة في البرمجة",
+  "st2n": "+3",
+  "st2l": "مجالات تطوير: الويب وأندرويد وسطح المكتب",
+  "st3l": "تطوير متكامل للواجهات والأنظمة الخلفية",
+  "st4n": "AR / EN",
+  "st4l": "مواقع متعددة اللغات",
+  "svc_h": "الخدمات التي أقدمها",
+  "svc_lead": "أقدم حلولا رقمية تناسب احتياجات مشروعك، بداية من الموقع التعريفي وحتى المتاجر والأنظمة المتكاملة.",
+  "s1s": "مواقع الشركات والخدمات",
+  "s1t": "مواقع الشركات ومقدمي الخدمات",
+  "s1p": "مواقع سريعة ومتوافقة مع الهاتف والكمبيوتر، تعرض خدماتك بوضوح وتعزز ثقة العملاء في نشاطك.",
+  "s2s": "المتاجر الإلكترونية",
+  "s2t": "متاجر البيع عبر الإنترنت",
+  "s2p": "متاجر تعرض منتجاتك وتتيح للعملاء التسوق وإرسال الطلبات، مع أدوات لإدارة المنتجات والمبيعات.",
+  "s3s": "الأسواق والمنصات التجارية",
+  "s3t": "الأسواق الإلكترونية ومتاجر البقالة",
+  "s3p": "عرض المنتجات وتصنيفها وإدارة العروض والتوصيل، مع إمكانية دعم فروع أو بائعين متعددين.",
+  "s4s": "لوحات التحكم والأنظمة",
+  "s4t": "لوحات الإدارة والأنظمة",
+  "s4p": "أنظمة تنظم المبيعات والمخزون والحسابات، وتوفر تقارير تساعدك على متابعة العمل واتخاذ قرارات أفضل.",
+  "s5s": "تطبيقات أندرويد",
+  "s5t": "تطبيقات الهواتف",
+  "s5p": "تطبيقات تربط نشاطك التجاري بعملائك مباشرة وتسهل عليهم الوصول إلى خدماتك.",
+  "s6s": "برامج سطح المكتب",
+  "s6t": "برامج الكمبيوتر",
+  "s6p": "برامج باستخدام Python وتقنيات أخرى لأتمتة الأعمال وتسريع المهام اليومية.",
+  "wk_h": "نماذج من أعمالي",
+  "wk_lead": "تعرف على نماذج توضح أنواع المشاريع التي أعمل عليها، ويمكنني تنفيذ أفكار أخرى بما يناسب طبيعة نشاطك واحتياجاته.",
+  "w1t": "متجر أثاث إلكتروني",
+  "w1s": "متجر أثاث",
+  "w1d": "· يتضمن سلة تسوق وعمليات دفع وإدارة للطلبات",
+  "w1a": "متجر أثاث منزلي",
+  "w2t": "سوبر ماركت إلكتروني",
+  "w2s": "سوق إلكتروني",
+  "w2d": "· تصنيفات وعروض وخدمة توصيل إلى المنزل",
+  "w2a": "سوبر ماركت إلكتروني",
+  "w3t": "موقع شركة خدمات",
+  "w3s": "موقع شركة",
+  "w3d": "· هوية واضحة وصفحات سريعة",
+  "w3a": "موقع شركة تقدم خدمات",
+  "w4t": "لوحة تحكم للمبيعات",
+  "w4s": "لوحة إدارة",
+  "w4d": "· تقارير ومخزون وحسابات",
+  "w4a": "لوحة تحكم للمبيعات",
+  "w5t": "تطبيق طلبات لأندرويد",
+  "w5s": "تطبيق أندرويد",
+  "w5d": "· تجربة استخدام سلسة على الهاتف",
+  "w5a": "تطبيق طلبات يعمل على أندرويد",
+  "w6t": "برنامج محاسبة للكمبيوتر",
+  "w6s": "برنامج سطح مكتب · Python",
+  "w6d": "· فواتير ومخزون مع إمكانية العمل دون إنترنت",
+  "w6a": "برنامج محاسبة لسطح المكتب",
+  "sk_h": "المهارات والتقنيات",
+  "sk_lead": "أجمع بين تطوير الواجهات والأنظمة الخلفية وقواعد البيانات لبناء مشروع متكامل من مكان واحد.",
+  "pr_h": "مراحل تنفيذ مشروعك",
+  "pr_lead": "آلية عمل واضحة تضمن أن تكون تفاصيل المشروع ومتطلباته متفقا عليها قبل بدء التنفيذ.",
+  "p1b": "نفهم فكرتك",
+  "p1s": "نحدد هدف المشروع والجمهور المستهدف واحتياجاتك.",
+  "p2b": "نصمم التصور الأولي",
+  "p2s": "تراجع التصميم وتطلب التعديلات المناسبة قبل بدء البرمجة.",
+  "p3b": "أبرمج وأختبر",
+  "p3s": "تنفيذ المشروع واختباره على الهواتف وأجهزة الكمبيوتر.",
+  "p4b": "نطلق المشروع ونتابع",
+  "p4s": "نشر المشروع على الإنترنت وتقديم الدعم بعد التسليم.",
+  "ab_h": "نبذة عني",
+  "ab1": "أنا أحمد فوزي، حاصل على بكالوريوس التجارة، وحولت شغفي ومهارتي في البرمجة إلى مجال عملي منذ أكثر من ثماني سنوات.",
+  "ab2": "تساعدني خلفيتي التجارية على فهم مشروعك من منظور صاحب العمل: ما الذي يجذب العملاء؟ وما الذي يحتاجون إليه؟ وكيف تدار الطلبات والمخزونات؟ لذلك لا أكتفي بتصميم واجهة جميلة، بل أعمل على بناء حل عملي يخدم أهداف مشروعك ويساعد على نموه.",
+  "ab3": "نفذت أنواعا متنوعة من مشاريع البرمجيات باستخدام لغات وتقنيات مختلفة، ويمكنني تحويل فكرتك إلى حل مناسب مهما كان نوع المشروع أو حجمه.",
+  "ct_h": "هل لديك فكرة أو مشروع؟",
+  "ct_p": "أرسل تفاصيل فكرتك، وسنناقش الحل المناسب ونحدد نطاق العمل ومدة التنفيذ والتكلفة.",
+  "ct_wa": "تواصل معي عبر واتساب",
+  "ct_em": "إرسال بريد إلكتروني",
+  "foot": "© 2026 أحمد فوزي",
+  "langl": "اللغة",
+  "theme": "التبديل بين الوضع الفاتح والداكن",
+  "menu": "القائمة",
+  "close": "إغلاق",
+  "prev": "الصورة السابقة",
+  "next": "الصورة التالية",
+  "filt": "تصفية المشاريع حسب الفئة",
+  "p_all": "الكل",
+  "noimg": "الصورة غير متاحة",
+  "k_proj": "تظهر في:",
+  "cat_web": "مواقع إلكترونية",
+  "cat_shop": "متاجر إلكترونية",
+  "cat_desk": "برامج سطح المكتب",
+  "cat_and": "تطبيقات أندرويد",
+  "cat_auto": "الأتمتة والأدوات",
+  "cat_oth": "مشاريع أخرى",
+  "sk_lang": "لغات البرمجة",
+  "sk_front": "تطوير الواجهات الأمامية",
+  "sk_back": "الأنظمة الخلفية وواجهات API",
+  "sk_desk": "تطوير برامج سطح المكتب",
+  "sk_mob": "تطوير تطبيقات الهواتف",
+  "sk_db": "قواعد البيانات",
+  "sk_ux": "تصميم واجهات المستخدم والتصميم المتجاوب",
+  "ct_copy": "نسخ البريد الإلكتروني",
+  "ct_copied": "تم نسخ البريد الإلكتروني",
+  "ct_fail": "تعذر النسخ. يرجى نسخ البريد الإلكتروني يدويا."
+},
 "en": {
 "title": "Ahmed Fawzy | Web & Software Designer and Developer",
 "desc": "Ahmed Fawzy: software designer and web developer. Websites, online stores, Android apps and desktop software for business owners.",
@@ -649,9 +807,9 @@ const SKILLS=[["sk_lang",["Python","JavaScript"],[6]],["sk_front",["HTML","CSS",
 </script>
 <script>
 (()=>{
-const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)],LANGS=['en','zh','de'];
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)],LANGS=['ar','en','zh','de'];
 const store={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
-let lang='en',cat='all',cur=null,gi=0,opener=null,imgs=[];
+let lang='ar',cat='all',cur=null,gi=0,opener=null,imgs=[];
 const t=k=>(I18N[lang]&&I18N[lang][k])??I18N.en[k]??'';
 const plain=k=>{const d=document.createElement('div');d.innerHTML=t(k);return d.textContent};
 const el=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e};
@@ -660,8 +818,8 @@ const cards=$$('.work'),dlg=$('#dlg');
 /* language: URL ?lang= > saved choice > browser language > English */
 function detect(){const u=(new URLSearchParams(location.search).get('lang')||'').slice(0,2).toLowerCase();if(LANGS.includes(u))return u;
  const s=store.get('lang');if(LANGS.includes(s))return s;
- for(const l of navigator.languages||[navigator.language||'']){const c=String(l).toLowerCase().slice(0,2);if(LANGS.includes(c))return c}return 'en'}
-function setLang(l,save){lang=l;document.documentElement.lang=l;document.documentElement.dir='ltr';
+ return 'ar'}
+function setLang(l,save){lang=l;document.documentElement.lang=l;document.documentElement.dir=l==='ar'?'rtl':'ltr';
  $$('[data-i18n]').forEach(e=>e.innerHTML=t(e.dataset.i18n));
  $$('[data-i18n-aria]').forEach(e=>e.setAttribute('aria-label',t(e.dataset.i18nAria)));
  $$('[data-i18n-alt]').forEach(e=>e.setAttribute('alt',t(e.dataset.i18nAlt)));
